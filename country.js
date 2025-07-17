@@ -69,7 +69,8 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
             console.log(borderCountry);
             const borderCountryTag = document.createElement('a');
             borderCountryTag.innerText =  borderCountry.name.common;
-            borderCountryTag.href = `http://127.0.0.1:5500/country.html?name=${borderCountry.name.common}`
+            borderCountryTag.href = `country.html?name=${borderCountry.name.common}`;
+
             countryBorders.append(borderCountryTag);
 
            // console.log(borderCountry.name.common)
